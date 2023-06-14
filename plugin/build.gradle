@@ -23,6 +23,7 @@ dependencies {
     compileOnly ('net.citizensnpcs:citizens-main:2.0.30-SNAPSHOT') {
         exclude group: '*', module: '*'
     }
+    compileOnly 'com.github.Flowsqy:AbstractMenu:2.0.2'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
