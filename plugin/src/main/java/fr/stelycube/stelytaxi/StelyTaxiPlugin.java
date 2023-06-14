@@ -7,7 +7,6 @@ public class StelyTaxiPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
     }
 
 }
