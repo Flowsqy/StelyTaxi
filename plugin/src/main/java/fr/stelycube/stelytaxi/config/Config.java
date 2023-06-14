@@ -14,4 +14,8 @@ public class Config {
         configuration = configLoader.initFile(javaPlugin.getDataFolder(), Objects.requireNonNull(javaPlugin.getResource(fileName)), fileName);
     }
 
+    public void loadMenus() {
+
+    }
+
 }
