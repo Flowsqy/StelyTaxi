@@ -9,4 +9,8 @@ public class TraitLoader {
         CitizensAPI.getTraitFactory().registerTrait(TraitInfo.create(TaxiTrait.class));
     }
 
+    public void unload() {
+        CitizensAPI.getTraitFactory().deregisterTrait(TraitInfo.create(TaxiTrait.class));
+    }
+
 }

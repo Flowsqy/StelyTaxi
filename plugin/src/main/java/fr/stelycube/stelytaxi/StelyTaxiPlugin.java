@@ -39,4 +39,10 @@ public class StelyTaxiPlugin extends JavaPlugin {
         traitLoader.load();
     }
 
+    @Override
+    public void onDisable() {
+        final TraitLoader traitLoader = new TraitLoader();
+        traitLoader.unload();
+    }
+
 }
