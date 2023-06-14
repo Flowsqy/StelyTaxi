@@ -1,5 +1,6 @@
 package fr.stelycube.stelytaxi;
 
+import fr.stelycube.stelytaxi.config.Config;
 import fr.stelycube.stelytaxi.config.ConfigLoader;
 import fr.stelycube.stelytaxi.trait.TraitLoader;
 import org.bukkit.Bukkit;
@@ -24,6 +25,9 @@ public class StelyTaxiPlugin extends JavaPlugin {
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
+
+        final Config config = new Config();
+        config.load(configLoader, this, "config.yml");
 
         final TraitLoader traitLoader = new TraitLoader();
         traitLoader.load();
