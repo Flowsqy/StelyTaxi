@@ -1,6 +1,6 @@
 name: "StelyTaxi"
 author: "Flowsqy"
-version: ""${version}"
+version: "${version}"
 main: "fr.stelycube.stelytaxi.StelyTaxiPlugin"
 api-version: "1.13"
 depend:
